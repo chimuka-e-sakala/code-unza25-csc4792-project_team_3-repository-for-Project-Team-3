@@ -14,6 +14,7 @@ The University of Zambia *Journal of Agriculture and Biomedical Sciences* **(UNZ
 To address these challenges, we propose developing an **automated machine learning (ML)-based classification system** that uses **article titles and abstracts** to predict the correct discipline. This system will improve efficiency, reduce bias, and enhance the journal’s ability to organize and index articles effectively.  
 
 ---
+
 ## 2. **Business Objectives**
 The primary goal is to automate and optimize the classification process while ensuring high accuracy. Success from a real-world perspective would mean:
 
@@ -27,6 +28,8 @@ The primary goal is to automate and optimize the classification process while en
 - **Editors & Reviewers:** Spend less time on administrative tasks and more on content evaluation.
 - **Researchers & Readers:** Quickly locate relevant articles due to accurate tagging.
 - **Journal Management**: Improve operational efficiency and reduce publication delays.
+
+---
 
 ## *3. Data Mining Goals*  
 To achieve the business objectives, we will implement a *text classification model* using Natural Language Processing (NLP) and supervised learning. The key steps include:  
@@ -66,6 +69,8 @@ We will experiment with multiple classification algorithms:
 - *Journal Submission System Integration*:  
   - Automatically suggest categories during manuscript submission.  
   - Allow editors to override predictions if needed.
+
+---
     
 ## **4. Success Criteria**  
 For the model to be considered successful, it must meet the following benchmarks:  
@@ -80,8 +85,17 @@ For the model to be considered successful, it must meet the following benchmarks
 **Scalability** - Model should handle thousands of submissions without performance drops.  
 **Explainability** - Editors should understand why an article was classified a certain way.  
 
-## 2. **Potential Challenges & Mitigation Strategies **
-ChallengeMitigation StrategyClass ImbalanceUse oversampling (SMOTE) or class weights in training.Ambiguous Interdisciplinary ArticlesIntroduce a "Hybrid/Interdisciplinary" category.Domain-Specific TerminologyUse SciBERT/BioBERT instead of generic embeddings.Model InterpretabilityApply SHAP/LIME for transparency in predictions.
+---
+
+## **5. Potential Challenges & Mitigation Strategies**  
+| **Challenge** | **Mitigation Strategy** |
+|--------------|------------------------|
+| **Class Imbalance** | Use oversampling (SMOTE) or class weights in training. |
+| **Ambiguous Interdisciplinary Articles** | Introduce a "Hybrid/Interdisciplinary" category. |
+| **Domain-Specific Terminology** | Use SciBERT/BioBERT instead of generic embeddings. |
+| **Model Interpretability** | Apply SHAP/LIME for transparency in predictions. |
+
+---
 
 ## 6. **Future Enhancements**
 Multi-Label Classification (for articles belonging to multiple fields).
@@ -90,7 +104,7 @@ Active Learning - Allow editors to correct misclassifications to improve the mod
 
 Trend Analysis - Use classification data to track research trends over time.
 
-**Conclusion**
+### **Conclusion**
 
 This project will develop an automated, accurate, and scalable classification system for the Journal of Agricultural and Biomedical Sciences, reducing manual effort and improving consistency. By leveraging NLP and ML, we aim to enhance the journal’s operational efficiency and support researchers in accessing relevant content faster. Next Steps:
 
