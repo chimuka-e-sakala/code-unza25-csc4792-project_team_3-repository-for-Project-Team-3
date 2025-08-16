@@ -80,4 +80,26 @@ For the model to be considered successful, it must meet the following benchmarks
 **Scalability** - Model should handle thousands of submissions without performance drops.  
 **Explainability** - Editors should understand why an article was classified a certain way.  
 
----
+## 2. **Potential Challenges & Mitigation Strategies **
+ChallengeMitigation StrategyClass ImbalanceUse oversampling (SMOTE) or class weights in training.Ambiguous Interdisciplinary ArticlesIntroduce a "Hybrid/Interdisciplinary" category.Domain-Specific TerminologyUse SciBERT/BioBERT instead of generic embeddings.Model InterpretabilityApply SHAP/LIME for transparency in predictions.
+
+## 6. **Future Enhancements**
+Multi-Label Classification (for articles belonging to multiple fields).
+
+Active Learning - Allow editors to correct misclassifications to improve the model iteratively.
+
+Trend Analysis - Use classification data to track research trends over time.
+
+**Conclusion**
+
+This project will develop an automated, accurate, and scalable classification system for the Journal of Agricultural and Biomedical Sciences, reducing manual effort and improving consistency. By leveraging NLP and ML, we aim to enhance the journal’s operational efficiency and support researchers in accessing relevant content faster. Next Steps:
+
+Collect and preprocess a labeled dataset.
+
+Train and compare multiple models.
+
+Deploy the best-performing model into the journal’s workflow.
+
+Expected Impact: Faster publication process, better-organized archives, and improved user experience for researchers!
+
+
