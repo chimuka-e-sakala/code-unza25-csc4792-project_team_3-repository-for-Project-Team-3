@@ -66,3 +66,18 @@ We will experiment with multiple classification algorithms:
 - *Journal Submission System Integration*:  
   - Automatically suggest categories during manuscript submission.  
   - Allow editors to override predictions if needed.
+    
+## **4. Success Criteria**  
+For the model to be considered successful, it must meet the following benchmarks:  
+
+### **Performance Metrics:**  
+**Accuracy ≥ 85%** (to ensure reliable automated classification).  
+**Precision & Recall ≥ 80% per class** (to avoid bias toward any discipline).  
+**Balanced F1-Score** (to ensure fairness across categories).  
+
+### **Practical Deployment Requirements:**  
+**Low Latency** - Predictions should take <1 second to avoid slowing submissions.  
+**Scalability** - Model should handle thousands of submissions without performance drops.  
+**Explainability** - Editors should understand why an article was classified a certain way.  
+
+---
